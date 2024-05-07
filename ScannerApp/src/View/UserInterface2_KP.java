@@ -4,6 +4,9 @@
  */
 package ui_kp;
 
+import javax.swing.JComboBox;
+import javax.swing.JTextPane;
+
 /**
  *
  * @author G14
@@ -26,8 +29,15 @@ public class UserInterface2_KP extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextPaneTglInput = new javax.swing.JTextPane();
+        jButtonInput = new javax.swing.JButton();
+        jButtonRevisi = new javax.swing.JButton();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTextPane11 = new javax.swing.JTextPane();
+        jComboBoxJenisBerkas = new javax.swing.JComboBox<>();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTextPane12 = new javax.swing.JTextPane();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextPane6 = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -36,32 +46,53 @@ public class UserInterface2_KP extends javax.swing.JPanel {
         jTextPane3 = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextPane4 = new javax.swing.JTextPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextPane5 = new javax.swing.JTextPane();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTextPane7 = new javax.swing.JTextPane();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jTextPane8 = new javax.swing.JTextPane();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
+        jTextPaneKesatuan = new javax.swing.JTextPane();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jTextPane10 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jTextPane11 = new javax.swing.JTextPane();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jTextPane12 = new javax.swing.JTextPane();
+        jTextPaneNRP = new javax.swing.JTextPane();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jTextPane13 = new javax.swing.JTextPane();
+        jTextPaneTglLahir = new javax.swing.JTextPane();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        jTextPanePangkat = new javax.swing.JTextPane();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        jTextPaneKorps = new javax.swing.JTextPane();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        jTextPaneNama = new javax.swing.JTextPane();
 
-        jScrollPane5.setToolTipText("");
-        jScrollPane5.setName(""); // NOI18N
+        jScrollPane9.setName("tampilan kesatuan"); // NOI18N
 
-        jTextPane5.setText(" Korps     :");
-        jTextPane5.setName("plain2"); // NOI18N
-        jScrollPane5.setViewportView(jTextPane5);
+        jTextPaneTglInput.setName("tanggalinput"); // NOI18N
+        jScrollPane9.setViewportView(jTextPaneTglInput);
+
+        jButtonInput.setText("Input");
+        jButtonInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonInputActionPerformed(evt);
+            }
+        });
+
+        jButtonRevisi.setText("Revisi");
+        jButtonRevisi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRevisiActionPerformed(evt);
+            }
+        });
+
+        jTextPane11.setText("Jenis Berkas");
+        jScrollPane11.setViewportView(jTextPane11);
+
+        jComboBoxJenisBerkas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1.  Berkas Pendaftaran Prajurit/PNS ", "2.  Ijazah Dikum/Transkip Nilai ", "3.  Ijazah Dikmil/Kursus ", "4.  Akte Kelahiran ", "5.  Kep TI dan Kat Dlm Jab Serta Sprinlak ", "6.  Kep Kenaikan Pangkat ", "7.  Kep dan Piagam tanda Kehormatan", "8.  Surat Izin Menikah/Akta/Surat ", "9.  Surat Penunjukkan Istri/Suami ", "10. Sket Kematian Istri/Suami/Anak ", "11. Sket Akta Cerai Istri/Suami ", "12. Kartu Keluarga ", "13. Kartu Tanda Penduduk ", "14. Kartu ASABRI ", "15. Kartu NPWP ", "16. Daftar Riwayat Hidup ", "17. Pas Foto " }));
+
+        jScrollPane12.setToolTipText("");
+        jScrollPane12.setName(""); // NOI18N
+
+        jTextPane12.setText("Taggal Input :");
+        jTextPane12.setName("plain2"); // NOI18N
+        jScrollPane12.setViewportView(jTextPane12);
 
         jScrollPane6.setToolTipText("");
         jScrollPane6.setName(""); // NOI18N
@@ -73,14 +104,14 @@ public class UserInterface2_KP extends javax.swing.JPanel {
         jScrollPane2.setToolTipText("");
         jScrollPane2.setName(""); // NOI18N
 
-        jTextPane2.setText("Nama      :");
+        jTextPane2.setText("NRP         :");
         jTextPane2.setName("plain2"); // NOI18N
         jScrollPane2.setViewportView(jTextPane2);
 
         jScrollPane3.setToolTipText("");
         jScrollPane3.setName(""); // NOI18N
 
-        jTextPane3.setText("NRP        :");
+        jTextPane3.setText("Tgl Lahir :");
         jTextPane3.setName("plain2"); // NOI18N
         jScrollPane3.setViewportView(jTextPane3);
 
@@ -91,51 +122,55 @@ public class UserInterface2_KP extends javax.swing.JPanel {
         jTextPane4.setName("plain2"); // NOI18N
         jScrollPane4.setViewportView(jTextPane4);
 
-        jTextPane1.setName("tampilannrp"); // NOI18N
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane5.setToolTipText("");
+        jScrollPane5.setName(""); // NOI18N
 
-        jTextPane7.setName("tampilanpangkat"); // NOI18N
+        jTextPane5.setText(" Korps     :");
+        jTextPane5.setName("plain2"); // NOI18N
+        jScrollPane5.setViewportView(jTextPane5);
+
+        jScrollPane7.setToolTipText("");
+        jScrollPane7.setName(""); // NOI18N
+
+        jTextPane7.setText("Nama      :");
+        jTextPane7.setName("plain2"); // NOI18N
         jScrollPane7.setViewportView(jTextPane7);
 
-        jTextPane8.setName("tampilannama"); // NOI18N
-        jScrollPane8.setViewportView(jTextPane8);
+        jScrollPane8.setToolTipText("");
+        jScrollPane8.setName(""); // NOI18N
 
-        jScrollPane9.setName("tampilan kesatuan"); // NOI18N
+        jTextPaneKesatuan.setName("plain2"); // NOI18N
+        jScrollPane8.setViewportView(jTextPaneKesatuan);
 
-        jTextPane9.setName("tanggalinput"); // NOI18N
-        jScrollPane9.setViewportView(jTextPane9);
+        jScrollPane10.setToolTipText("");
+        jScrollPane10.setName(""); // NOI18N
 
-        jTextPane10.setName("tampilankorps"); // NOI18N
-        jScrollPane10.setViewportView(jTextPane10);
+        jTextPaneNRP.setName("plain2"); // NOI18N
+        jScrollPane10.setViewportView(jTextPaneNRP);
 
-        jButton1.setText("Input");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jScrollPane13.setToolTipText("");
+        jScrollPane13.setName(""); // NOI18N
 
-        jButton2.setText("Revisi");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jTextPaneTglLahir.setName("plain2"); // NOI18N
+        jScrollPane13.setViewportView(jTextPaneTglLahir);
 
-        jTextPane11.setText("Jenis Berkas");
-        jScrollPane11.setViewportView(jTextPane11);
+        jScrollPane14.setToolTipText("");
+        jScrollPane14.setName(""); // NOI18N
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jTextPanePangkat.setName("plain2"); // NOI18N
+        jScrollPane14.setViewportView(jTextPanePangkat);
 
-        jScrollPane12.setToolTipText("");
-        jScrollPane12.setName(""); // NOI18N
+        jScrollPane15.setToolTipText("");
+        jScrollPane15.setName(""); // NOI18N
 
-        jTextPane12.setText("Taggal Input :");
-        jTextPane12.setName("plain2"); // NOI18N
-        jScrollPane12.setViewportView(jTextPane12);
+        jTextPaneKorps.setName("plain2"); // NOI18N
+        jScrollPane15.setViewportView(jTextPaneKorps);
 
-        jScrollPane13.setName("tampilan kesatuan"); // NOI18N
-        jScrollPane13.setViewportView(jTextPane13);
+        jScrollPane16.setToolTipText("");
+        jScrollPane16.setName(""); // NOI18N
+
+        jTextPaneNama.setName("plain2"); // NOI18N
+        jScrollPane16.setViewportView(jTextPaneNama);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -143,59 +178,70 @@ public class UserInterface2_KP extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jButtonInput)
+                            .addGap(18, 18, 18)
+                            .addComponent(jButtonRevisi))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jScrollPane11)
+                                .addComponent(jScrollPane12))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jScrollPane9))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(8, 8, 8)
+                                    .addComponent(jComboBoxJenisBerkas, 0, 496, Short.MAX_VALUE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                                .addComponent(jScrollPane1)
-                                .addComponent(jScrollPane7)
-                                .addComponent(jScrollPane10))
-                            .addComponent(jScrollPane13)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jComboBox1, 0, 496, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane9)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane14, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane15, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 498, Short.MAX_VALUE))))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -203,33 +249,35 @@ public class UserInterface2_KP extends javax.swing.JPanel {
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxJenisBerkas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(232, Short.MAX_VALUE))
+                    .addComponent(jButtonInput)
+                    .addComponent(jButtonRevisi))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonInputActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonRevisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRevisiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonRevisiActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton jButtonInput;
+    private javax.swing.JButton jButtonRevisi;
+    private javax.swing.JComboBox<String> jComboBoxJenisBerkas;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -238,18 +286,52 @@ public class UserInterface2_KP extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
     private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane13;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
     private javax.swing.JTextPane jTextPane4;
     private javax.swing.JTextPane jTextPane5;
     private javax.swing.JTextPane jTextPane6;
     private javax.swing.JTextPane jTextPane7;
-    private javax.swing.JTextPane jTextPane8;
-    private javax.swing.JTextPane jTextPane9;
+    private javax.swing.JTextPane jTextPaneKesatuan;
+    private javax.swing.JTextPane jTextPaneKorps;
+    private javax.swing.JTextPane jTextPaneNRP;
+    private javax.swing.JTextPane jTextPaneNama;
+    private javax.swing.JTextPane jTextPanePangkat;
+    private javax.swing.JTextPane jTextPaneTglInput;
+    private javax.swing.JTextPane jTextPaneTglLahir;
     // End of variables declaration//GEN-END:variables
+
+    public JComboBox<String> getjComboBoxJenisBerkas() {
+        return jComboBoxJenisBerkas;
+    }
+
+    public JTextPane getjTextPaneKesatuan() {
+        return jTextPaneKesatuan;
+    }
+
+    public JTextPane getjTextPaneKorps() {
+        return jTextPaneKorps;
+    }
+
+    public JTextPane getjTextPaneNRP() {
+        return jTextPaneNRP;
+    }
+
+    public JTextPane getjTextPaneNama() {
+        return jTextPaneNama;
+    }
+
+    public JTextPane getjTextPanePangkat() {
+        return jTextPanePangkat;
+    }
+
+    public JTextPane getjTextPaneTglInput() {
+        return jTextPaneTglInput;
+    }
+
+    public JTextPane getjTextPaneTglLahir() {
+        return jTextPaneTglLahir;
+    }
 }

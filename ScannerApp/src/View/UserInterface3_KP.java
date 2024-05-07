@@ -4,6 +4,9 @@
  */
 package ui_kp;
 
+import javax.swing.JLabel;
+import javax.swing.JTextPane;
+
 /**
  *
  * @author Lenovo
@@ -41,24 +44,28 @@ public class UserInterface3_KP extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextPane4 = new javax.swing.JTextPane();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTextPane7 = new javax.swing.JTextPane();
+        jTextPaneKesatuan = new javax.swing.JTextPane();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jTextPane13 = new javax.swing.JTextPane();
+        jTextPaneTglInput = new javax.swing.JTextPane();
         jScrollPane9 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
+        jTextPanePangkat = new javax.swing.JTextPane();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jTextPane10 = new javax.swing.JTextPane();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        jTextPane14 = new javax.swing.JTextPane();
+        jTextPaneKorps = new javax.swing.JTextPane();
         jScrollPane15 = new javax.swing.JScrollPane();
-        jTextPane15 = new javax.swing.JTextPane();
-        jLabel1 = new javax.swing.JLabel();
+        jTextPaneJenisBerkas = new javax.swing.JTextPane();
+        jLabelDokumen = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
         jTextPane16 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonInput = new javax.swing.JButton();
+        jButtonRevisi = new javax.swing.JButton();
         jScrollPane17 = new javax.swing.JScrollPane();
-        jTextPane17 = new javax.swing.JTextPane();
+        jTextPaneNama = new javax.swing.JTextPane();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        jTextPane18 = new javax.swing.JTextPane();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        jTextPaneNRP = new javax.swing.JTextPane();
+        jScrollPane20 = new javax.swing.JScrollPane();
+        jTextPaneTglLahir = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -96,7 +103,7 @@ public class UserInterface3_KP extends javax.swing.JFrame {
         jScrollPane3.setToolTipText("");
         jScrollPane3.setName(""); // NOI18N
 
-        jTextPane3.setText("NRP        :");
+        jTextPane3.setText("Tgl Lahir        :");
         jTextPane3.setName("plain2"); // NOI18N
         jScrollPane3.setViewportView(jTextPane3);
 
@@ -110,64 +117,77 @@ public class UserInterface3_KP extends javax.swing.JFrame {
         jScrollPane7.setToolTipText("");
         jScrollPane7.setName(""); // NOI18N
 
-        jTextPane7.setName("plain2"); // NOI18N
-        jScrollPane7.setViewportView(jTextPane7);
+        jTextPaneKesatuan.setName("plain2"); // NOI18N
+        jScrollPane7.setViewportView(jTextPaneKesatuan);
 
         jScrollPane13.setToolTipText("");
         jScrollPane13.setName(""); // NOI18N
 
-        jTextPane13.setName("plain2"); // NOI18N
-        jScrollPane13.setViewportView(jTextPane13);
+        jTextPaneTglInput.setName("plain2"); // NOI18N
+        jScrollPane13.setViewportView(jTextPaneTglInput);
 
         jScrollPane9.setToolTipText("");
         jScrollPane9.setName(""); // NOI18N
 
-        jTextPane9.setName("plain2"); // NOI18N
-        jScrollPane9.setViewportView(jTextPane9);
+        jTextPanePangkat.setName("plain2"); // NOI18N
+        jScrollPane9.setViewportView(jTextPanePangkat);
 
         jScrollPane10.setToolTipText("");
         jScrollPane10.setName(""); // NOI18N
 
-        jTextPane10.setName("plain2"); // NOI18N
-        jScrollPane10.setViewportView(jTextPane10);
+        jTextPaneKorps.setName("plain2"); // NOI18N
+        jScrollPane10.setViewportView(jTextPaneKorps);
 
-        jScrollPane14.setToolTipText("");
-        jScrollPane14.setName(""); // NOI18N
+        jScrollPane15.setViewportView(jTextPaneJenisBerkas);
 
-        jTextPane14.setName("plain2"); // NOI18N
-        jScrollPane14.setViewportView(jTextPane14);
-
-        jScrollPane15.setViewportView(jTextPane15);
-
-        jLabel1.setText("DOKUMEN AKAN TAMPIL DISINI");
-        jLabel1.setToolTipText("");
+        jLabelDokumen.setText("DOKUMEN AKAN TAMPIL DISINI");
+        jLabelDokumen.setToolTipText("");
 
         jScrollPane16.setToolTipText("");
         jScrollPane16.setName(""); // NOI18N
 
-        jTextPane16.setText("Nama      :");
+        jTextPane16.setText("NRP      :");
         jTextPane16.setName("plain2"); // NOI18N
         jScrollPane16.setViewportView(jTextPane16);
 
-        jButton1.setText("Input");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonInput.setText("Input");
+        jButtonInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonInputActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Revisi");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRevisi.setText("Revisi");
+        jButtonRevisi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButtonRevisiActionPerformed(evt);
             }
         });
 
         jScrollPane17.setToolTipText("");
         jScrollPane17.setName(""); // NOI18N
 
-        jTextPane17.setName("plain2"); // NOI18N
-        jScrollPane17.setViewportView(jTextPane17);
+        jTextPaneNama.setName("plain2"); // NOI18N
+        jScrollPane17.setViewportView(jTextPaneNama);
+
+        jScrollPane18.setToolTipText("");
+        jScrollPane18.setName(""); // NOI18N
+
+        jTextPane18.setText("Nama      :");
+        jTextPane18.setName("plain2"); // NOI18N
+        jScrollPane18.setViewportView(jTextPane18);
+
+        jScrollPane19.setToolTipText("");
+        jScrollPane19.setName(""); // NOI18N
+
+        jTextPaneNRP.setName("plain2"); // NOI18N
+        jScrollPane19.setViewportView(jTextPaneNRP);
+
+        jScrollPane20.setToolTipText("");
+        jScrollPane20.setName(""); // NOI18N
+
+        jTextPaneTglLahir.setName("plain2"); // NOI18N
+        jScrollPane20.setViewportView(jTextPaneTglLahir);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -177,6 +197,10 @@ public class UserInterface3_KP extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelDokumen, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane12)
                             .addComponent(jScrollPane11)
@@ -184,23 +208,23 @@ public class UserInterface3_KP extends javax.swing.JFrame {
                             .addComponent(jScrollPane5)
                             .addComponent(jScrollPane4)
                             .addComponent(jScrollPane3)
-                            .addComponent(jScrollPane2)
-                            .addComponent(jScrollPane16))
+                            .addComponent(jScrollPane16)
+                            .addComponent(jScrollPane18))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jScrollPane7)
                             .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
                             .addComponent(jScrollPane9)
                             .addComponent(jScrollPane10)
-                            .addComponent(jScrollPane14)
                             .addComponent(jScrollPane15)
-                            .addComponent(jScrollPane17)))
+                            .addComponent(jScrollPane17)
+                            .addComponent(jScrollPane19)
+                            .addComponent(jScrollPane20)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(jButtonInput)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                        .addComponent(jButtonRevisi)))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,57 +232,62 @@ public class UserInterface3_KP extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
-                        .addGap(46, 46, 46))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGap(0, 124, Short.MAX_VALUE))
+                    .addComponent(jLabelDokumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
                         .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
+                        .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(23, 23, 23))
+                    .addComponent(jButtonInput)
+                    .addComponent(jButtonRevisi))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonInputActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButtonRevisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRevisiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButtonRevisiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,38 +325,78 @@ public class UserInterface3_KP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButtonInput;
+    private javax.swing.JButton jButtonRevisi;
+    private javax.swing.JLabel jLabelDokumen;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
-    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTextPane jTextPane10;
     private javax.swing.JTextPane jTextPane11;
     private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane13;
-    private javax.swing.JTextPane jTextPane14;
-    private javax.swing.JTextPane jTextPane15;
     private javax.swing.JTextPane jTextPane16;
-    private javax.swing.JTextPane jTextPane17;
+    private javax.swing.JTextPane jTextPane18;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
     private javax.swing.JTextPane jTextPane4;
     private javax.swing.JTextPane jTextPane5;
     private javax.swing.JTextPane jTextPane6;
-    private javax.swing.JTextPane jTextPane7;
-    private javax.swing.JTextPane jTextPane9;
+    private javax.swing.JTextPane jTextPaneJenisBerkas;
+    private javax.swing.JTextPane jTextPaneKesatuan;
+    private javax.swing.JTextPane jTextPaneKorps;
+    private javax.swing.JTextPane jTextPaneNRP;
+    private javax.swing.JTextPane jTextPaneNama;
+    private javax.swing.JTextPane jTextPanePangkat;
+    private javax.swing.JTextPane jTextPaneTglInput;
+    private javax.swing.JTextPane jTextPaneTglLahir;
     // End of variables declaration//GEN-END:variables
+
+    public JLabel getjLabelDokumen() {
+        return jLabelDokumen;
+    }
+
+    public JTextPane getjTextPaneJenisBerkas() {
+        return jTextPaneJenisBerkas;
+    }
+
+    public JTextPane getjTextPaneKesatuan() {
+        return jTextPaneKesatuan;
+    }
+
+    public JTextPane getjTextPaneKorps() {
+        return jTextPaneKorps;
+    }
+
+    public JTextPane getjTextPaneNRP() {
+        return jTextPaneNRP;
+    }
+
+    public JTextPane getjTextPaneNama() {
+        return jTextPaneNama;
+    }
+
+    public JTextPane getjTextPanePangkat() {
+        return jTextPanePangkat;
+    }
+
+    public JTextPane getjTextPaneTglInput() {
+        return jTextPaneTglInput;
+    }
+
+    public JTextPane getjTextPaneTglLahir() {
+        return jTextPaneTglLahir;
+    }
 }
