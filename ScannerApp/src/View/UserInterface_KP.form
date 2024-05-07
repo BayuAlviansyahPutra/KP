@@ -32,46 +32,47 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="tfNama" min="-2" pref="435" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="70" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNRP" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="tfNRP" max="32767" attributes="0"/>
+                          <Component id="jTextFieldTglLahir" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="tfKesatuan" min="-2" pref="434" max="-2" attributes="0"/>
+                          <Component id="jScrollPane6" min="-2" pref="69" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jTextFieldKesatuan" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jScrollPane4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jScrollPane4" max="32767" attributes="0"/>
+                              <Component id="jScrollPane5" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="tfPangkat" max="32767" attributes="0"/>
-                              <Component id="tfKorps" max="32767" attributes="0"/>
+                              <Component id="jTextFieldPangkat" max="32767" attributes="0"/>
+                              <Component id="jTextFieldKorps" max="32767" attributes="0"/>
                           </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNama" min="-2" pref="435" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="input" pref="0" max="32767" attributes="0"/>
-                          <Component id="jScrollPane7" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="tfTgl" min="-2" pref="434" max="-2" attributes="0"/>
+                      <Component id="jButtonInput" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="88" max="32767" attributes="0"/>
+              <EmptySpace pref="92" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -80,41 +81,41 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldNRP" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                          <Component id="tfNama" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextFieldNama" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="tfNRP" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldTglLahir" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
-                  <Component id="tfPangkat" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldPangkat" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
-                  <Component id="tfKorps" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldKorps" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane6" min="-2" max="-2" attributes="0"/>
-                  <Component id="tfKesatuan" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldKesatuan" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
-                  <Component id="tfTgl" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Component id="input" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="227" max="32767" attributes="0"/>
+              <Component id="jButtonInput" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="251" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -148,7 +149,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextPane" name="jTextPane2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nama      :"/>
+            <Property name="text" type="java.lang.String" value="NRP         :"/>
             <Property name="name" type="java.lang.String" value="plain2" noResource="true"/>
           </Properties>
         </Component>
@@ -167,7 +168,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextPane" name="jTextPane3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="NRP        :"/>
+            <Property name="text" type="java.lang.String" value="Tgl Lahir :"/>
             <Property name="name" type="java.lang.String" value="plain2" noResource="true"/>
           </Properties>
         </Component>
@@ -230,51 +231,47 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="tfNama">
+    <Component class="javax.swing.JTextField" name="jTextFieldNRP">
       <Properties>
         <Property name="name" type="java.lang.String" value="nama" noResource="true"/>
       </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfNRP">
+    <Component class="javax.swing.JTextField" name="jTextFieldTglLahir">
       <Properties>
         <Property name="name" type="java.lang.String" value="NRP" noResource="true"/>
       </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfPangkat">
+    <Component class="javax.swing.JTextField" name="jTextFieldPangkat">
       <Properties>
         <Property name="name" type="java.lang.String" value="Pangkat" noResource="true"/>
       </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfKorps">
+    <Component class="javax.swing.JTextField" name="jTextFieldKorps">
       <Properties>
         <Property name="name" type="java.lang.String" value="Korps" noResource="true"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfKorpsActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldKorpsActionPerformed"/>
       </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="tfTgl">
+    <Component class="javax.swing.JTextField" name="jTextFieldKesatuan">
       <Properties>
         <Property name="name" type="java.lang.String" value="Kesatuan" noResource="true"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTglActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldKesatuanActionPerformed"/>
       </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButtonInput">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Input"/>
+        <Property name="name" type="java.lang.String" value="input1" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldNama">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="nama" noResource="true"/>
+      </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane7">
       <Properties>
@@ -289,33 +286,11 @@
       <SubComponents>
         <Component class="javax.swing.JTextPane" name="jTextPane7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tanggal :"/>
+            <Property name="text" type="java.lang.String" value="Nama      :"/>
             <Property name="name" type="java.lang.String" value="plain2" noResource="true"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="tfKesatuan">
-      <Properties>
-        <Property name="name" type="java.lang.String" value="Kesatuan" noResource="true"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfKesatuanActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="input">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Input"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inputActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
   </SubComponents>
 </Form>
